@@ -3,20 +3,10 @@ package ir.maktab.model;
 import javax.persistence.*;
 import java.io.Serializable;
 
-/**
- * @author Mohammad hashemi
- * <p>
- * Teacher entity/Table
- */
 @Entity
 @Table(name = "addresses")
 public class Address implements Serializable {
 
-    /**
-     * Fields or columns
-     * <p>
-     * data types should be wrapper to enforcing nullability in the database
-     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long address_id;
